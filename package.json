@@ -1,0 +1,25 @@
+{
+  "name": "matts-website",
+  "version": "1.0.0",
+  "description": "A one page website for IT Consulting based is Orange County, CA. Utilizing JavScript, HTML, CSS, fullpage.js, AOS, Bootstrap4, and media queries.",
+  "main": "index.js",
+  "dependencies": {
+    "fullpage.js": "^3.0.9",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulKillian/matts-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulKillian/matts-website/issues"
+  },
+  "homepage": "https://github.com/PaulKillian/matts-website#readme"
+}
