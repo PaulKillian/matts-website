@@ -11,7 +11,7 @@ const parallax = document.querySelector("#contact"),
 function iPhone(e) {
     document.querySelector("#slides");
     const t = document.querySelector("#s1-left"),
-        c = document.querySelector(".s1-text-size"),
+        c = document.querySelector("#bottom-p-1"),
         a = document.querySelector("#s1-text"),
         o = document.querySelector("#bottom-p");
     e.matches &&
@@ -23,12 +23,13 @@ function iPhone(e) {
         s1B.classList.remove("display-2"),
         s1C.classList.remove("display-2"),
         t.classList.remove("pt-4", "mt-5"),
+        c.classList.remove("s1-text-size"),
         (c.textContent = "Catering small to medium size businesses with a focus on independent freelancers. We offer solutions for optimal IT performance."),
         (o.textContent = "")),
-    (mainBg.remove);
-    const mobile = document.createElement("div")
-    mainBg.appendChild(mobile);
-    mobile.className = "section tinted-image main-hero";
+        (mainBg.remove);
+        const mobile = document.createElement("div")
+        mainBg.appendChild(mobile);
+        mobile.className = "section tinted-image main-hero";
 }
 iPhone(y), y.addListener(iPhone);
 const x = window.matchMedia("(max-width: 769px)");
