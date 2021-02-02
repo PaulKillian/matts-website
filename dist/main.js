@@ -49,3 +49,19 @@ function full(e) {
     e.matches && (copy.classList.remove("text-center"), s1A.classList.add("display-1"), s1B.classList.add("display-2"), s1C.classList.add("display-2"));
 }
 full(z), z.addListener(full);
+
+const sections = document.querySelectorAll('div.section');
+const config = {
+    rootMargin: '-50px 0px -55%'
+};
+
+let observer = new IntersectionObserver(function (entries, self) {
+    entries.forEach(entry => {
+        console.log(entry);
+    });
+}, config);
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+
