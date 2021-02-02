@@ -256,9 +256,9 @@ span {
     #copy-right {
         text-align: center !important;
     }
-    /*#about-h5 {*/
-    /*    padding-left: 0rem !important;*/
-    /*}*/
+    fp-auto-height-responsiv {
+        width: 100%;
+    }
     #contact-text {
         margin-right: 0rem !important;
     }
