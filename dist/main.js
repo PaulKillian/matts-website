@@ -7,10 +7,7 @@ const parallax = document.querySelector("#contact"),
     about = document.querySelector("#about"),
     copy = document.getElementById("copy-right"),
     y = window.matchMedia("(max-width: 376px)");
-    mainBg = document.getElementById("s1");
-    logo = document.querySelector(".logo");
-    mobile = document.createElement("div");
-    s1Left = document.getElementById("s1-left");
+    mainBg = document.getElementById("s1")
 function iPhone(e) {
     document.querySelector("#slides");
     const t = document.querySelector("#s1-left"),
@@ -19,7 +16,7 @@ function iPhone(e) {
         o = document.querySelector("#bottom-p");
     e.matches &&
     (copy.classList.add("pt-5"),
-        contact.classList.add("ml-2", "mb-2"),
+        contact.classList.add("ml-4"),
         (parallax.style.filter = "brightness(0.3)"),
         a.classList.add("small-font"),
         s1A.classList.remove("display-1"),
@@ -30,12 +27,9 @@ function iPhone(e) {
         (c.textContent = "Catering small to medium size businesses with a focus on independent freelancers. We offer solutions for optimal IT performance."),
         (o.textContent = "")),
         (mainBg.remove);
+        const mobile = document.createElement("div")
         mainBg.appendChild(mobile);
         mobile.className = "section tinted-image main-hero";
-        about.classList.remove("pt-5");
-        about.classList.add("pt-2");
-        logo.classList.add("pb-5");
-        s1Left.classList.add("text-center");
 }
 iPhone(y), y.addListener(iPhone);
 const x = window.matchMedia("(max-width: 769px)");
