@@ -60,10 +60,10 @@ html {
     background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.3)), url(../images/back.webp);
     background-size: cover;
 }
-h4 {
-    font-family: "Londrina Shadow", cursive;
-}
-h5,
+/*h4 {*/
+/*    font-family: "Londrina Shadow", cursive;*/
+/*}*/
+h4,
 p {
     font-family: Montserrat, sans-serif;
 }
@@ -108,6 +108,17 @@ span {
     background: linear-gradient(rgba(106, 133, 255, 0.6), rgba(2, 2, 2, 0.5));
     background-size: cover;
     border-radius: 2.25rem;
+}
+.tinted {
+    filter: brightness(0.8);
+}
+.glass {
+    background: rgba( 20, 0, 72, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
