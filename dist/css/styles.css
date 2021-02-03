@@ -209,23 +209,24 @@ span {
         top: 13rem;
     }
     #slides {
-        width: 202%;
-        right: 12rem;
+        height: 2668px !important;
     }
-    .fp-controlArrow.fp-prev {
-        left: 5px;
-        top: 1rem;
+    .fp-slidesContainer {
+        display: flex;
+        flex-direction: column;
+        float: none;
+        height: 0;
     }
-    .fp-controlArrow.fp-next {
-        right: 10px;
-        top: 1rem;
+}
+@media only screen and (max-width: 374px) {
+    .fp-slidesContainer {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media only screen and (min-width: 375px) {
     .card {
-        margin: 31px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 31px;
     }
 }
 @media only screen and (min-width: 376px) {
