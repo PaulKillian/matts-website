@@ -209,13 +209,17 @@ span {
         top: 13rem;
     }
     #slides {
-        height: 2352px !important;
+        height: 2152px !important;
     }
     .fp-slidesContainer {
         display: flex;
         flex-direction: column;
         float: none;
         height: 0;
+    }
+        .fp-controlArrow.fp-prev,
+        .fp-controlArrow.fp-next {
+            display: none;
     }
 }
 @media only screen and (max-width: 374px) {
