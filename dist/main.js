@@ -16,7 +16,7 @@ function iPhone(e) {
         o = document.querySelector("#bottom-p");
     e.matches &&
     (copy.classList.add("pt-5"),
-        contact.classList.add("ml-4"),
+        contact.classList.add("ml-2"),
         (parallax.style.filter = "brightness(0.3)"),
         a.classList.add("small-font"),
         s1A.classList.remove("display-1"),
