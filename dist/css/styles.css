@@ -212,6 +212,14 @@ span {
         width: 202%;
         right: 12rem;
     }
+    .fp-controlArrow.fp-prev {
+        left: 5px;
+        top: 1rem;
+    }
+    .fp-controlArrow.fp-next {
+        right: 10px;
+        top: 1rem;
+    }
 }
 @media only screen and (min-width: 375px) {
     .card {
