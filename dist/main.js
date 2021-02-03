@@ -7,7 +7,11 @@ const parallax = document.querySelector("#contact"),
     about = document.querySelector("#about"),
     copy = document.getElementById("copy-right"),
     y = window.matchMedia("(max-width: 376px)");
-    mainBg = document.getElementById("s1")
+    mainBg = document.getElementById("s1");
+    x = window.matchMedia("(max-width: 769px)");
+    mobile = document.createElement("div");
+    z = window.matchMedia("(min-width: 1488px)");
+
 function iPhone(e) {
     document.querySelector("#slides");
     const t = document.querySelector("#s1-left"),
@@ -27,12 +31,11 @@ function iPhone(e) {
         (c.textContent = "Catering small to medium size businesses with a focus on independent freelancers. We offer solutions for optimal IT performance."),
         (o.textContent = "")),
         (mainBg.remove);
-        const mobile = document.createElement("div")
         mainBg.appendChild(mobile);
         mobile.className = "section tinted-image main-hero";
 }
 iPhone(y), y.addListener(iPhone);
-const x = window.matchMedia("(max-width: 769px)");
+
 function iPad(e) {
     const t = document.querySelector("#contact-text");
     e.matches &&
@@ -42,10 +45,10 @@ function iPad(e) {
         t.classList.remove("text-left"),
         t.classList.add("text-center", "pt-3"),
         about.classList.remove("text-right"),
-        about.classList.add("text-center", "pl-5", "pt-5"));
+        about.classList.add("text-center", "pl-5", "pt-2"));
 }
 iPad(x), x.addListener(iPad);
-const z = window.matchMedia("(min-width: 1488px)");
+
 function full(e) {
     e.matches && (copy.classList.remove("text-center"), s1A.classList.add("display-1"), s1B.classList.add("display-2"), s1C.classList.add("display-2"));
 }
