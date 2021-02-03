@@ -158,6 +158,10 @@ span {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%, transparent 50%);
     margin: auto;
 }
+/*#fp-nav ul li a span {*/
+/*    height: 10px;*/
+/*    width: 10px;*/
+/*}*/
 .card-position {
     width: 30.6rem;
     height: 14.4rem;
@@ -204,6 +208,10 @@ span {
         right: 16.6rem;
         top: 13rem;
     }
+    #slides {
+        width: 202%;
+        right: 12rem;
+    }
 }
 @media only screen and (min-width: 375px) {
     .card {
@@ -212,19 +220,11 @@ span {
         margin-bottom: 20px;
     }
 }
-@media only screen and (max-width: 375px) {
-    #slides {
-        width: 202%;
-        right: 12rem;
-    }
-}
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 376px) {
     .fp-controlArrow.fp-prev {
         left: 29px;
         top: 14rem;
     }
-}
-@media only screen and (min-width: 375px) {
     .fp-controlArrow.fp-next {
         right: 13px;
         top: 14rem;
@@ -273,39 +273,38 @@ span {
 }
 
 @media only screen and (width: 768px) {
-.hero-text {
-top: 13rem;
-}
-#s1-text {
-flex-wrap: wrap;
-top: 0 !important;
-right: 0px !important;
-}
-#s1-right {
-left: 4rem;
-}
+    .hero-text {
+        top: 13rem;
+    }
+    #s1-text {
+        flex-wrap: wrap;
+        top: 0 !important;
+        right: 0px !important;
+    }
+    #s1-right {
+        left: 4rem;
+    }
 }
 
 @media only screen and (min-width: 1261px) {
-#s1-right {
-z-index: 1;
-bottom: 43px;
-}
+    #s1-right {
+        z-index: 1;
+        bottom: 43px;
+    }
 }
 @media only screen and (min-width: 1519px) {
-#s1-right {
-z-index: 1;
-bottom: 0;
-top: 0;
-top: 4rem;
-left: 1.7rem;
-}
-.center {
-top: 6rem;
-}
-}
-
-.logo {
-max-width: 150px;
-max-height: 190px;
+    #s1-right {
+        z-index: 1;
+        bottom: 0;
+        top: 0;
+        top: 4rem;
+        left: 1.7rem;
+    }
+    .center {
+        top: 6rem;
+    }
+    .logo {
+        max-width: 150px;
+        max-height: 190px;
+    }
 }
