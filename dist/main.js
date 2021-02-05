@@ -59,11 +59,7 @@ const config = {
     rootMargin: '-50px 0px -55%'
 };
 
-let observer = new IntersectionObserver(function (entries, self) {
-    entries.forEach(entry => {
-        console.log(entry);
-    });
-}, config);
+let observer = new IntersectionObserver(function (entries, self) {}, config);
 
 sections.forEach(section => {
     observer.observe(section);
